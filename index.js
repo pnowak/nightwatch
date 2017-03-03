@@ -4,8 +4,10 @@ const http 		= require('http');
 const inquirer 	= require('inquirer');
 const fs 		= require('fs');
 const request   = require('request');
+const Nightmare = require('nightmare');
 const id        = require('./helpers/id.js');
 const graphic   = require('./helpers/graphic.js');
+const night     = require('./helpers/night.js');
 
 const questions = [
     {

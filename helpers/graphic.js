@@ -1,5 +1,6 @@
 'use strict';
 
+const inquirer 	= require('inquirer');
 const id = require('./id.js');
 
 module.exports = function graphic() {

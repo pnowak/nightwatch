@@ -1,6 +1,7 @@
 'use strict';
 
-const crawler = require('./crawler.js');
+const inquirer  = require('inquirer');
+const night     = require('./night.js');
 
 module.exports = function id() {
     inquirer.prompt({
@@ -16,9 +17,8 @@ module.exports = function id() {
                 console.log('Templata ['+ answer['template id'] +'] nie istnieje!');
             }
             else {
-                console.log(data);
                 console.log('Templata ['+ answer['template id'] +'] istnieje!');
-                crawler('https://app.getresponse.com/login.html');
+                nigth('https://app.getresponse.com/login.html', data);
             }
         });
     });
